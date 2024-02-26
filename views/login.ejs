@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+
+        <%- include('partials/header.ejs') %>
+        
+        <div id="cont">
+            <form action="/login" method="POST">
+                <input type="text" name="nombre" placeholder="nombre">
+                <input type="text" name="contra" placeholder="contraseña">
+                <button type="submit">Logearse</button>
+            </form>
+            <a href="/register"><p>No tienes cuenta? Registrese</p></a>
+            
+        </div>
+        <%- include('partials/footer.ejs')%>
+    </section>
+</body>
+</html>
+<%- include('partials/estilos.ejs')%>
